@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Giphy Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #results {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gif {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giphy Search</h1>
+    <input type="text" id="search-term" placeholder="Enter search term...">
+    <button onclick="searchGiphy()">Search</button>
+    <div id="results"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
